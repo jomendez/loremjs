@@ -61,4 +61,7 @@ Usage:
     lorem.query = '2p';
     lorem.createLorem(document.getElementById('lorem'));
 
+For HTML Lorem Ipsum options, visit: <br>
+http://www.lorem-ipsum-html.com
+
 Feel free to ask questions.
