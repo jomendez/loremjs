@@ -118,6 +118,15 @@ var Lorem;
             return lorem;
     };
 
+    Lorem.prototype.getLoremArray = function (numberOfElements) {
+        var maxLength = numberOfElements > Lorem.WORDS.length ? Lorem.WORDS.length : numberOfElements;
+        return Lorem.WORDS.slice(0, maxLength);
+    }
+
+    Lorem.prototype.getRandomLoremArray = function () {
+       return this.getLoremArray(this.randomInt(0, Lorem.WORDS.length - 1));
+    }
+
     //Register as jQuery
     if (typeof jQuery != 'undefined') {
         (function($) {
