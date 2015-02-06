@@ -52,7 +52,7 @@ Native JavaScript (without any framework)
 
 If you want to use Lorem generator natively, (without jQuery).
 
-With Native support, you can lorem.js into your framework.
+With Native support, you can include lorem.js into your framework.
 
 Usage:
 
@@ -60,6 +60,18 @@ Usage:
     lorem.type = Lorem.TEXT;
     lorem.query = '2p';
     lorem.createLorem(document.getElementById('lorem'));
+    
+You can also get an array of dummy text:
+
+```
+    var lorem = new Lorem;
+    var dummyArray lorem.getLoremArray(100); //maximun of 1186
+    
+    //or you can generate the array with a random number of indexes
+    
+    var lorem = new Lorem;
+    var dummyArray lorem.getRandomLoremArray(); 
+```
 
 For HTML Lorem Ipsum options, visit: <br>
 http://www.lorem-ipsum-html.com
